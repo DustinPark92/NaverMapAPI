@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63F4879CAC0F22FDE66315C5 /* Pods_NaverMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C0DC72C1ED941C58D6047C /* Pods_NaverMapAPI.framework */; };
 		DA7DEBFB24F60C7300676426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DEBFA24F60C7300676426 /* AppDelegate.swift */; };
 		DA7DEBFD24F60C7300676426 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DEBFC24F60C7300676426 /* SceneDelegate.swift */; };
 		DA7DEBFF24F60C7300676426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DEBFE24F60C7300676426 /* ViewController.swift */; };
 		DA7DEC0224F60C7300676426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7DEC0024F60C7300676426 /* Main.storyboard */; };
 		DA7DEC0424F60C7400676426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7DEC0324F60C7400676426 /* Assets.xcassets */; };
 		DA7DEC0724F60C7400676426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7DEC0524F60C7400676426 /* LaunchScreen.storyboard */; };
+		DA7DEC0F24F614C700676426 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DEC0E24F614C700676426 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14AEAF26EA34E9F803CFEA39 /* Pods-NaverMapAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMapAPI.release.xcconfig"; path = "Target Support Files/Pods-NaverMapAPI/Pods-NaverMapAPI.release.xcconfig"; sourceTree = "<group>"; };
+		9EA5D77FFD661E11CD16E254 /* Pods-NaverMapAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverMapAPI.debug.xcconfig"; path = "Target Support Files/Pods-NaverMapAPI/Pods-NaverMapAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		DA7DEBF724F60C7300676426 /* NaverMapAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverMapAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7DEBFA24F60C7300676426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7DEBFC24F60C7300676426 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		DA7DEC0324F60C7400676426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7DEC0624F60C7400676426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA7DEC0824F60C7400676426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7DEC0E24F614C700676426 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E0C0DC72C1ED941C58D6047C /* Pods_NaverMapAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverMapAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F4879CAC0F22FDE66315C5 /* Pods_NaverMapAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AD142BFB20A399ED72D2433 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EA5D77FFD661E11CD16E254 /* Pods-NaverMapAPI.debug.xcconfig */,
+				14AEAF26EA34E9F803CFEA39 /* Pods-NaverMapAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DA7DEBEE24F60C7300676426 = {
 			isa = PBXGroup;
 			children = (
 				DA7DEBF924F60C7300676426 /* NaverMapAPI */,
 				DA7DEBF824F60C7300676426 /* Products */,
+				5AD142BFB20A399ED72D2433 /* Pods */,
+				F5E55DE9AC427ED1A4ECE9D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +77,21 @@
 				DA7DEBFA24F60C7300676426 /* AppDelegate.swift */,
 				DA7DEBFC24F60C7300676426 /* SceneDelegate.swift */,
 				DA7DEBFE24F60C7300676426 /* ViewController.swift */,
+				DA7DEC0E24F614C700676426 /* Extension.swift */,
 				DA7DEC0024F60C7300676426 /* Main.storyboard */,
 				DA7DEC0324F60C7400676426 /* Assets.xcassets */,
 				DA7DEC0524F60C7400676426 /* LaunchScreen.storyboard */,
 				DA7DEC0824F60C7400676426 /* Info.plist */,
 			);
 			path = NaverMapAPI;
+			sourceTree = "<group>";
+		};
+		F5E55DE9AC427ED1A4ECE9D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0C0DC72C1ED941C58D6047C /* Pods_NaverMapAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA7DEC0B24F60C7400676426 /* Build configuration list for PBXNativeTarget "NaverMapAPI" */;
 			buildPhases = (
+				BF73BD5FE9EA0543B58AE8FC /* [CP] Check Pods Manifest.lock */,
 				DA7DEBF324F60C7300676426 /* Sources */,
 				DA7DEBF424F60C7300676426 /* Frameworks */,
 				DA7DEBF524F60C7300676426 /* Resources */,
+				5B44BF335DF98297E11D0B3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B44BF335DF98297E11D0B3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverMapAPI/Pods-NaverMapAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverMapAPI/Pods-NaverMapAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaverMapAPI/Pods-NaverMapAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF73BD5FE9EA0543B58AE8FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaverMapAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA7DEBF324F60C7300676426 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				DA7DEBFF24F60C7300676426 /* ViewController.swift in Sources */,
 				DA7DEBFB24F60C7300676426 /* AppDelegate.swift in Sources */,
 				DA7DEBFD24F60C7300676426 /* SceneDelegate.swift in Sources */,
+				DA7DEC0F24F614C700676426 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,7 @@
 		};
 		DA7DEC0C24F60C7400676426 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA5D77FFD661E11CD16E254 /* Pods-NaverMapAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		DA7DEC0D24F60C7400676426 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AEAF26EA34E9F803CFEA39 /* Pods-NaverMapAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
